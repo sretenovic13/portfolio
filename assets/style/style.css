@@ -167,6 +167,7 @@ font-size: 30px;
   display: block;
   height: 350px;
   transition: transform 0.5s;
+  object-fit: cover;
 }
 
 .layer{
@@ -367,5 +368,8 @@ nav .fas{
   }
   .copyright{
     font-size: 14px;
+  }
+  .container nav img{
+    width: 40px;
   }
 }
