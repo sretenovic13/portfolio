@@ -29,6 +29,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 30px;
 }
 .logo{
   width: 70px;
@@ -99,7 +100,7 @@ font-size: 30px;
 .about-col-2>p{
   margin-top: 10px;
   margin-bottom: 70px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .tab-titles{
@@ -129,7 +130,7 @@ font-size: 30px;
 .tab-contents ul li{
   list-style: none;
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 .tab-contents ul li span{
   color: #b54769;
@@ -239,7 +240,6 @@ font-size: 30px;
 .contact-right{
   flex-basis: 60%;
 }
-
 .contact-left p {
   margin-top: 30px;
 }
@@ -248,7 +248,10 @@ font-size: 30px;
   margin-right: 15px;
   font-size: 25px;
 }
-
+ a{
+  text-decoration: none;
+  color: #fff;
+}
 .social-icons{
   margin-top: 30px;
 }
@@ -286,6 +289,10 @@ form input, form textarea{
   color: #fff;
   font-size: 18px;
   border-radius: 6px;
+}
+
+form textarea{
+  resize: vertical;
 }
 
 form .btn2 {
@@ -371,5 +378,8 @@ nav .fas{
   }
   .container nav img{
     width: 40px;
+  }
+  nav{
+    padding: 15px 3px;
   }
 }

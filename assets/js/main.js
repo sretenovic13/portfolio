@@ -17,6 +17,14 @@ function opentab(tabname){
 
 const sidemenu = document.getElementById('sidemenu')
 const menuIcon = document.querySelector('.fa-bars')
+const menuLinks = document.querySelectorAll('#sidemenu a')
+
+menuLinks.forEach(link => {
+    link.addEventListener('cllick', menuLinkClick)
+})
+function menuLinkClick(){
+    closemenu()
+}
 
 function openmenu(){
     sidemenu.style.right = "0"
@@ -26,6 +34,7 @@ function closemenu(){
     sidemenu.style.right = "-200px"
 }
 
+
 function clickOutsideMenu(event){
     if(!sidemenu.contains(event.target) && !menuIcon.contains(event.target)){
         closemenu()
@@ -33,6 +42,11 @@ function clickOutsideMenu(event){
 }
 
 document.addEventListener('click', clickOutsideMenu);
+
+
+
+
+
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyjiWZPh65lNQdlvJutKu7xKUhCGw5IVqdxwV4oNGs0sw-F1No7L9qfocz8k2c7F0CZ/exec'
 const form = document.forms['submit-to-google-sheet']
