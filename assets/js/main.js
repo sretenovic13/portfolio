@@ -5,8 +5,8 @@ function opentab(tabname){
     for(let tablink of tablinks){
         tablink.classList.remove('active-link')
     }
-    for(let tacontent of tabcontents){
-        tacontent.classList.remove('active-tab')
+    for(let tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab')
     }
     event.target.classList.add('active-link')
     document.getElementById(tabname).classList.add('active-tab')
