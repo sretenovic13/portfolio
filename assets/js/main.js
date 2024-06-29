@@ -16,6 +16,15 @@ function opentab(tabname){
 
 
 const sidemenu = document.getElementById('sidemenu')
+const menuIcon = document.querySelector('.fa-bars')
+const menuLinks = document.querySelectorAll('#sidemenu a')
+
+menuLinks.forEach(link => {
+    link.addEventListener('cllick', menuLinkClick)
+})
+function menuLinkClick(){
+    closemenu()
+}
 
 function openmenu(){
     sidemenu.style.right = "0"
@@ -24,6 +33,18 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-200px"
 }
+
+
+function clickOutsideMenu(event){
+    if(!sidemenu.contains(event.target) && !menuIcon.contains(event.target)){
+        closemenu()
+    }
+}
+
+document.addEventListener('click', clickOutsideMenu);
+
+
+
 
 
 

@@ -11,12 +11,12 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="assets/img/logo.png" href="#header" class="logo">
+                <img src="assets/img/logo.png" alt="Logo" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" onclick="menuLinkClick()">Home</a></li>
+                    <li><a href="#about" onclick="menuLinkClick()">About</a></li>
+                    <li><a href="#portfolio" onclick="menuLinkClick()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="menuLinkClick()">Contact</a></li>
                     <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
@@ -32,12 +32,12 @@
         <div class="container">
              <div class="row">
                 <div class="about-col-1">
-                    <img src="assets/img/img.png" alt="">
+                    <img src="assets/img/img.png" alt="My Picture">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>IT runs in the family; my uncle is the one who introduced me to the field. With basketball being a priority throughout my life until this point, I have decided to shift my focus to IT. Basketball has provided me with the foundations needed for every career, such as discipline, hard work, commitment, focus, and the will to always learn and improve.
-                    </p>
+                    <p>I'm an open, communicative person who likes challenges. Always ready to help and to learn something new. <br>I'm dedicated and hard work. Looking for an opportunity to take my skills to a higher level. <br>Good at multitasking but also at setting one priority goal aside and disecting it into little pieces in order to complete it as fully as possible.
+                        Teamwork and individual lead.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
@@ -46,23 +46,17 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web development</span><br><br>HTML5, CSS3, SCSS, Bootstrap 5,<br> Git & Github, jQuery, Vanilla Javascript (ES5, ES6,…), REACT, NodeJS, TypeScript,<br>WordPress, Figma and Webflow </li>
+                            <li><span>Web development</span><br><br>HTML5, CSS3, SCSS, Bootstrap 5,<br> Git & Github, jQuery, Vanilla Javascript (ES5, ES6,…),<br>WordPress, Figma and Webflow </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><br><span>Web Developer 
-                                Intranea Solutions, Serbia · Internship, 
-                                </span><br>April 2024 - May 2024<br>
-                                Developed and maintained websites using vanilla JavaScript, HTML, and CSS
-                                Implemented responsive design to ensure optimal user experience across various devices
-                                Tested and debugged code to improve website functionality and performance
-                            </li>
+                            <li><br>IT runs in the family, my uncle is the one who brought me into the field. With basketball being priority throughout my life up until this point, I have decided to shift the priorities in ITs favor. Basketball gave me the foundations needed in every career, such as discipline, hard work, comittment, focus and the will to always learn and improve.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2013-2017</span><br>Second gymansium in Kragujevac</li>
+                            <li><span>2013-2017</span><br>Second gymnasium in Kragujevac</li>
                             <li><span>January 2023- April 2023</span><br>SOFTUNI, Java</li>
                             <li><span>September 2023 - Mart 2024</span><br>HIMERA IT, Web & Javascript</li>
                             <li><span>April 2024 - June 2024</span><br>HIMERA IT, REACT</li>
@@ -78,31 +72,30 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="assets/img/work1.png" alt="">
+                    <img src="assets/img/work1.png" alt="E-commerce">
                     <div class="layer">
                         <h3>E-commerce</h3>
                         <p></p>
-                        <a href="https://github.com/sretenovic13/ecommerce"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://e-commerce-tan-iota.vercel.app/products.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="assets/img/work2.png" alt="">
+                    <img src="assets/img/work2.png" alt="To-Do List">
                     <div class="layer">
                         <h3>To-Do List</h3>
                         <p></p>
-                        <a href="https://github.com/sretenovic13/ToDo-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://to-do-app-lime-two.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="assets/img/work3.jpg" alt="">
+                    <img src="assets/img/work3.jpg" alt="Book Lists">
                     <div class="layer">
                         <h3>Book Lists</h3>
                         <p></p>
-                        <a href="https://github.com/sretenovic13/book-list"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://book-list-peach.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
         </div>
     </div>
     <!-- -----contact----- --> 
@@ -112,13 +105,13 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>sretenovic.stefan@yahoo.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>+38166366573</p>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:sretenovic.stefan@yahoo.com">sretenovic.stefan@yahoo.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i><a href="tel:+38166366573">+381 66 366 573</a></p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/stefan.trojkas/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/sretenovic13"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/sretenovic13/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/stefan-sretenovic-b03500292/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="assets/img/myCV.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -133,7 +126,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; Stefan</p>
+            <p>Copyright &copy; Stefan Sretenovic</p>
         </div>
     </div>
 
